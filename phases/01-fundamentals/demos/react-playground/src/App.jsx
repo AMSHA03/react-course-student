@@ -1,12 +1,13 @@
 function App() {
-  const studentName = "Maya";
-  const lessonNumber = 3;
+  const studentName = "Kunle";
+  const courseNAME = "React lessons";
+  const lessonNumber = 8;
 
   return (
     <>
-      <h1 className="lesson-title">Hello, {studentName}</h1>
-      <h3>Today is lesson {lessonNumber}</h3>
-      <h4>Two plus two is {2 + 2}.</h4>
+      <h1 className="Student name">Hello, {studentName}</h1>
+      <h3>Today is lesson {courseNAME}</h3>
+      <h4>Eleven minus 8 is {8 - 3}.</h4>
     </>
   );
 }
