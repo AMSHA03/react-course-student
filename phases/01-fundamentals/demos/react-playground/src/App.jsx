@@ -1,13 +1,14 @@
-function App() {
-  const studentName = "Kunle";
-  const courseNAME = "React lessons";
-  const lessonNumber = 8;
+import Coursecard from "./Coursecard";
 
+import "./App.css";
+
+function App() {
   return (
     <>
-      <h1 className="Student name">Hello, {studentName}</h1>
-      <h3>Today is lesson {courseNAME}</h3>
-      <h4>Eleven minus 8 is {8 - 3}.</h4>
+      <h1>My Learning Courses</h1>
+
+      <Coursecard />
+      <Coursecard />
     </>
   );
 }
