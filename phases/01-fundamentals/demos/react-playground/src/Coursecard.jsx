@@ -1,11 +1,11 @@
-function Coursecard() {
+function CourseCard({ tittle, topic, lessonCount }) {
   return (
-    <div className="Coursecard">
-      <h2>React Development</h2>
-      <p>Learn how to code with react</p>
-      <p>Duration: 8 Weeks</p>
+    <div className="CourseCard">
+      <h2>{tittle}</h2>
+      <p>{topic}</p>
+      <p>{lessonCount}</p>
     </div>
   );
 }
 
-export default Coursecard;
+export default CourseCard;
