@@ -1,17 +1,30 @@
-import LessonBadge from "./LessonBadge";
+import CourseCard from "./CourseCard";
 
-function Panel({ children }) {
-  return <main className="panel">{children}</main>;
-}
+import "./App.css";
 
 function App() {
   return (
-    <Panel>
-      <h1>Welcome to the course</h1>
+    <>
+      <h1>My Learning Courses</h1>
 
-      <LessonBadge title="JSX" lessonNumber={3} />
-      <LessonBadge title="Components" lessonNumber={4} />
-    </Panel>
+      <CourseCard
+        title="React for Beginners"
+        topic="Introduction to React"
+        lessonCount={5}
+      />
+
+      <CourseCard
+        title="Introduction to props"
+        topic="Argument"
+        lessonCount={10}
+      />
+
+      <CourseCard
+        title="Css for Beginners"
+        topic="Styling and Layout"
+        lessonCount={15}
+      />
+    </>
   );
 }
 
