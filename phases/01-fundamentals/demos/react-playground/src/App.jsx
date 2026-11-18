@@ -1,13 +1,17 @@
-function App() {
-  const studentName = "Maya";
-  const lessonNumber = 3;
+import LessonBadge from "./LessonBadge";
 
+function Panel({ children }) {
+  return <main className="panel">{children}</main>;
+}
+
+function App() {
   return (
-    <>
-      <h1 className="lesson-title">Hello, {studentName}</h1>
-      <h3>Today is lesson {lessonNumber}</h3>
-      <h4>Two plus two is {2 + 2}.</h4>
-    </>
+    <Panel>
+      <h1>Welcome to the course</h1>
+
+      <LessonBadge title="JSX" lessonNumber={3} />
+      <LessonBadge title="Components" lessonNumber={4} />
+    </Panel>
   );
 }
 
